@@ -103,7 +103,46 @@
         z-index: -2;
     
 }
-
-
     }
+.advantages{
+    margin-top:10px !important;
+    .circle {
+        position: absolute;
+        width: 600px;
+        height: 326px;
+        border: 2px solid rgba(255, 0, 0, 0.5);
+        border-radius: 50%;
+        border-color:black;
+        z-index:-2;
+        margin-left:1px;
+    }
+    .circle:nth-child(1) {
+        transform: rotate(48deg);
+        margin-left: 19px;
+        margin-top: -518px;
+    }
+    .circle:nth-child(2) {
+        transform: rotate(48deg);
+        margin-left: -16px;
+        margin-top: -455px;
+    }
+    
+    .circle:nth-child(3) {
+        transform: rotate(48deg);
+        margin-left: -61px;
+        margin-top: -427px;
+    
+    }
+    .blur-circle::before {
+        content: '';
+        position: absolute;
+        width: 369px;
+        height: 369px;
+        background: rgba(208, 7, 7, 56);
+        border-radius: 50%;
+        top: 1721px;
+        left: 59%;
+        transform: translate(-50%, -50%);
+        filter: blur(100px);
+        z-index: -2;
 }
