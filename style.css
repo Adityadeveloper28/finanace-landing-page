@@ -335,6 +335,19 @@ justify-content:center;
       rotate: 346deg;
   
   }
+  .blur-circle::before {
+    content: "";
+    position: absolute;
+    width: 248px;
+    height: 369px;
+    background: rgba(208, 7, 7, 56);
+    border-radius: 50%;
+    left: 507px;
+    transform: translate(-50%, -50%);
+    filter: blur(100px);
+    z-index: -2;
+    margin-top: -211px;
+  }
 }
   .circle {
     position: absolute;
